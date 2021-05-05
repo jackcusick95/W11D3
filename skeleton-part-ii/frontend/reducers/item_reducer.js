@@ -1,6 +1,6 @@
 import { RECEIVE_ALL_POKEMON, RECEIVE_POKEMON } from './../actions/pokemon_actions';
 
-const itemReducers = (state = {}, action) => {
+const itemReducer = (state = {}, action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_POKEMON:
@@ -11,4 +11,4 @@ const itemReducers = (state = {}, action) => {
   }
 }
 
-export default itemReducers;
+export default itemReducer;
